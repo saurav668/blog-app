@@ -48,7 +48,7 @@ app.get("/api", (req, res) => {
 // Set the port
 const PORT = process.env.PORT || 4000;
 
-app.listen(PORT, () => {
+app.listen(PORT,'0.0.0.0', () => {
   connectDB();
   console.log(`Server running on port ${PORT}`);
 });
